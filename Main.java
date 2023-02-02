@@ -53,6 +53,7 @@ public class Main {
           // IF THEY CHOOSE TO REMOVE AN ITEM
           String AddRemove = Input.StringInput();
           if (AddRemove.equals("YES")){
+            
             System.out.println("What item would you like to remove? ");
             for (String i : BudgetHash.keySet()) 
             {
@@ -62,6 +63,7 @@ public class Main {
             BudgetHash.remove(ItemRemove);
             DummyHash.remove(ItemRemove);
             System.out.println(ItemRemove+" has been removed");
+            System.out.println("Budget: ");
             for (String i : BudgetHash.keySet()) 
             {
               System.out.println(i+"   $"+BudgetHash.get(i));
